@@ -38,6 +38,9 @@ export const projects = [
   },
 ];
 
+
+// ! Hidden on ended Portfolio
+// // This is a example
 export const TimeLineData = [
   { year: 2017, text: 'Started my journey', },
   { year: 2018, text: 'Worked as a freelance developer', },
