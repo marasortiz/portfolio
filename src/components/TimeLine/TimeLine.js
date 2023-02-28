@@ -22,43 +22,43 @@ import {
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
-  const [activeItem, setActiveItem] = useState(0);
-  const carouselRef = useRef();
+  // const [activeItem, setActiveItem] = useState(0);
+  // const carouselRef = useRef();
 
-  // Comment this part generate a bug on mobile devices
-  const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+  // // Comment this part generate a bug on mobile devices
+  // const scroll = (node, left) => {
+  //   return node.scrollTo({ left, behavior: 'smooth' });
+  // }
 
-  const handleClick = (e, i) => {
-    e.preventDefault();
+  // const handleClick = (e, i) => {
+  //   e.preventDefault();
 
-    if (carouselRef.current) {
-      const scrollLeft = Math.floor(
-        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
-      );
+  //   if (carouselRef.current) {
+  //     const scrollLeft = Math.floor(
+  //       carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
+  //     );
 
-      scroll(carouselRef.current, scrollLeft);
-    }
-  };
+  //     scroll(carouselRef.current, scrollLeft);
+  //   }
+  // };
 
-  const handleScroll = () => {
-    if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+  // const handleScroll = () => {
+  //   if (carouselRef.current) {
+  //     const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
 
-      setActiveItem(index);
-    }
-  }
+  //     setActiveItem(index);
+  //   }
+  // }
 
-  // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
-  useEffect(() => {
-    const handleResize = () => {
-      scroll(carouselRef.current, 0);
-    }
+  // // snap back to beginning of scroll when window is resized
+  // // avoids a bug where content is covered up if coming from smaller screen
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     scroll(carouselRef.current, 0);
+  //   }
 
-    window.addEventListener('resize', handleResize);
-  }, []);
+  //   window.addEventListener('resize', handleResize);
+  // }, []);
 
   return (
     <Section id="about">
@@ -67,7 +67,9 @@ const Timeline = () => {
         I design and code beautifully simple things, and I love what I do.
       </SectionText>
       {/* Loop over the Timeline Data */}
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+
+      {/* Carousel Hidden on Ended Web */}
+      {/* <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
@@ -118,9 +120,9 @@ const Timeline = () => {
             </CarouselMobileScrollNode>
           ))}
         </>
-      </CarouselContainer>
+      </CarouselContainer> */}
       {/* Lopp over the Buttons of the Timeline */}
-      <CarouselButtons>
+      {/* <CarouselButtons>
         {TimeLineData.map((item, index) => (
           <CarouselButton
             key={index}
@@ -132,7 +134,7 @@ const Timeline = () => {
             <CarouselButtonDot active={activeItem} />
           </CarouselButton>
         ))}
-      </CarouselButtons>
+      </CarouselButtons> */}
       <SectionDivider />
     </Section>
   );
