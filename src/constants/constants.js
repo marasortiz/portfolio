@@ -1,9 +1,8 @@
 // TODO Modify Links / Portfolio
 export const projects = [
   {
-    title: "MERN Memories",
-    description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
+    title: "Hoobank",
+    description: "Using Vite.js (React). It's a bank site",
     image: "./images/1.png",
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://github.com/marasortiz/hoobank-vite",
@@ -11,33 +10,58 @@ export const projects = [
     id: 0,
   },
   {
-    title: "E-Commerce",
-    description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    title: "Restaurant Landing Page",
+    description: "Modern UI/UX Restaurant Landing Page Website",
     image: "./images/2.png",
     tags: ["React", "JavaScript"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/marasortiz/gericht-restaurant",
+    visit: "https://marasortiz.github.io/gericht-restaurant/",
     id: 1,
   },
   {
-    title: "WebRTC App",
-    description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "./images/3.jpg",
+    title: "Modern UI/UX GPT-3",
+    description: "Web example of a GPT-3 service with ....",
+    image: "./images/3.png",
     tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/marasortiz/gpt3_mso",
+    visit: "https://marasortiz.github.io/gpt3_mso/",
     id: 2,
   },
   {
-    title: "Unichat",
-    description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "./images/4.jpg",
+    title: "RPG - Dragon Repeller",
+    description: "RPG game build with JavaScript",
+    image: "./images/4.png",
     tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/marasortiz/JavaScript-RPG",
+    visit: "https://javascript-rpg.marasortiz.repl.co/",
+    id: 3,
+  },
+  {
+    title: "Movie Review",
+    description: "Webpage with a Movie Database API with a Database of Reviews",
+    image: "./images/5.png",
+    tags: ["React", "ChatEngine", "Firebase"],
+    source: "https://github.com/marasortiz/frontend_movie_v2",
+    visit: "https://frontendmoviev2.marasortiz.repl.co",
+    id: 3,
+  },
+  {
+    title: "Gym Form (ES)",
+    description: "Webpage with a Form (on Spanish)",
+    image: "./images/6.png",
+    tags: ["React", "ChatEngine", "Firebase"],
+    source: "https://github.com/marasortiz/Proyecto_final-Gimnasio",
+    visit: "https://marasortiz.github.io/Proyecto_final-Gimnasio/",
+    id: 3,
+  },
+  {
+    title: "Video API (ES)",
+    description:
+      "It is proposed to load a video file from a local folder on the PC and play it using the options allowed by the Media Source API. (on Spanish)",
+    image: "./images/7.png",
+    tags: ["React", "ChatEngine", "Firebase"],
+    source: "https://github.com/marasortiz/Practica_4-APIs_de_HTML5",
+    visit: "https://marasortiz.github.io/Practica_4-APIs_de_HTML5/",
     id: 3,
   },
 ];
