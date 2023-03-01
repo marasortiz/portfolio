@@ -15,7 +15,7 @@ export const projects = [
     description:
       "Web example of a restaurant made with React with multiple components who shows different ways to reuse the components.",
     image: "./images/2.png",
-    tags: ["React", "HTML", "CSS", "JavaScript"],
+    tags: ["React", "TailwindCSS", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/gericht-restaurant",
     visit: "https://marasortiz.github.io/gericht-restaurant/",
     id: 1,
