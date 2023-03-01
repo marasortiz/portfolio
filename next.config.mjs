@@ -1,12 +1,12 @@
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  assetPrefix: "./",
-};
+/* eslint-disable import/no-extraneous-dependencies */
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
 
-export default nextConfig;
+module.exports = withBundleAnalyzer({
+  poweredByHeader: false,
+  trailingSlash: true,
+  basePath: "portfolio",
+  assetPrefix: "/portfolio/",
+  reactStrictMode: true,
+});
