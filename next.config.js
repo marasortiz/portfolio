@@ -1,4 +1,3 @@
 const nextConfig = {
-    ...
   basePath: "/portfolio",
 };
