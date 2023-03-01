@@ -1,10 +1,17 @@
-const pathPrefix =
-  process.env.NODE_ENV === "production" ? "/portfolio/" : "";
+const withImages = require("next-images");
+const withPlugins = require("next-compose-plugins");
+const isDev = process.env.NODE_ENV !== "production";
 
-module.exports = {
-  assetPrefix: pathPrefix,
-  basepatch: "/portfolio/",
-  env: {
-    pathPrefix,
+module.exports = withPlugins([
+  [
+    withImages,
+    {
+      assetPrefix: isDev ? "" : "/portfolio/",
+    },
+  ],
+  {
+    trailingSlash: true,
+    basePath: isDev ? "" : "/portfolio",
+    assetPrefix: isDev ? "" : "/portfolio/",
   },
-};
+]);
