@@ -11,7 +11,7 @@ export const projects = [
     id: 0,
   },
   {
-    title: "Restaurant Landing Page",
+    title: "Restaurant Page",
     description:
       "Web example of a restaurant made with React with multiple components who shows different ways to reuse the components.",
     image: "./images/2.png",
@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "Modern UI/UX GPT-3",
     description:
-      "Web example made with React with multiple components who shows different ways to reuse the components. Also use the CDD BEM Model",
+      "Web example made with React with multiple components who shows different ways to reuse the components. Also use 'CSS BEM'",
     image: "./images/3.png",
     tags: ["React", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/gpt3_mso",
