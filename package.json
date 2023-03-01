@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "deploy": "gh-pages -d dist -t true",
     "export": "next export",
     "start": "next start"
   },
