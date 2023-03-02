@@ -1,10 +1,10 @@
-import Acomplishments from '../components/Acomplishments/Acomplishments';
+import Acomplishments from '../components/Acomplishments/Acomplishments_es';
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
-import Hero from '../components/Hero/Hero';
-import Projects from '../components/Projects/Projects';
-import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
-import { Layout } from '../layout/Layout';
+import Hero from '../components/Hero/Hero_es';
+import Projects from '../components/Projects/Projects_es';
+import Technologies from '../components/Technologies/Technologies_es';
+import Timeline from '../components/TimeLine/TimeLine_es';
+import { Layout } from '../layout/Layout_es';
 import { Section } from '../styles/GlobalComponents';
 
 import Link from "next/link";

@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang="en-GB">
+      <Html lang="en">
         <Head>
           <title>Portfolio</title>
           <link rel="shortcut icon" href="./favicon.ico" />

@@ -1,4 +1,4 @@
-// TODO Modify Links / Portfolio
+// EN
 export const projects = [
   {
     title: "Hoobank",
@@ -64,6 +64,80 @@ export const projects = [
     title: "Video API (ES)",
     description:
       "It is proposed to load a video file from a local folder on the PC and play it using the options allowed by the Media Source API (on Spanish)",
+    image: "./images/7.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/Practica_4-APIs_de_HTML5",
+    visit: "https://marasortiz.github.io/Practica_4-APIs_de_HTML5/",
+    id: 3,
+  },
+];
+
+// ES
+export const proyectos = [
+  {
+    title: "Hoobank (EN)",
+    description:
+      "Usando Vite.js (React) muestra una web bancaria con múltiples componentes que muestra diferentes formas de reutilizar los componentes",
+    image: "./images/1.png",
+    tags: ["ViteJs", "React", "HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/hoobank-vite",
+    visit: "https://marasortiz.github.io/hoobank-vite/",
+    id: 0,
+  },
+  {
+    title: "Restaurante (EN)",
+    description:
+      "Web ejemplo de un restaurante realizado con React, con múltiples componentes que muestra diferentes formas de reutilizar los componentes.",
+    image: "./images/2.png",
+    tags: ["React", "TailwindCSS", "HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/gericht-restaurant",
+    visit: "https://marasortiz.github.io/gericht-restaurant/",
+    id: 1,
+  },
+  {
+    title: "UI/UX GPT-3 Web (EN)",
+    description:
+      "Web de ejemplo realizada con React con múltiples componentes que muestra diferentes formas de reutilizar los componentes. Utiliza también 'CSS BEM'",
+    image: "./images/3.png",
+    tags: ["React", "HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/gpt3_mso",
+    visit: "https://marasortiz.github.io/gpt3_mso/",
+    id: 2,
+  },
+  {
+    title: "RPG - Dragon Repeller (EN)",
+    description:
+      "Juego RPG construido con JavaScript que permite al jugador matar a un dragón. Para ello es necesario adquirir nuevas armas o comprar salud",
+    image: "./images/4.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/JavaScript-RPG",
+    visit: "https://javascript-rpg.marasortiz.repl.co/",
+    id: 3,
+  },
+  {
+    title: "API de Peliculas (EN)",
+    description:
+      "Página web con una API de base de datos de películas, procedente de 'The Movie Database', que admite críticas. Estas críticas pueden ser borradas o modificadas",
+    image: "./images/5.png",
+    tags: ["HTML", "JavaScript", "CSS", "APIs", "MongoDB"],
+    source: "https://github.com/marasortiz/frontend_movie_v2",
+    visit: "https://frontendmoviev2.marasortiz.repl.co",
+    id: 3,
+  },
+  {
+    title: "Gimnasio (ES)",
+    description:
+      "Página web con formulario. Emula una base de datos de gimnasio con una 'Lista de Socios', 'Nuevas Altas' y una sección para Modificar / Borrar Socios.",
+    image: "./images/6.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/Proyecto_final-Gimnasio",
+    visit: "https://marasortiz.github.io/Proyecto_final-Gimnasio/",
+    id: 3,
+  },
+  {
+    title: "Video API (ES)",
+    description:
+      "Se propone cargar un archivo de vídeo desde una carpeta local del PC y reproducirlo utilizando las opciones que permite la Media Source API",
     image: "./images/7.png",
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/Practica_4-APIs_de_HTML5",

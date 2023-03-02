@@ -13,7 +13,6 @@ import {
   SocialIcons,
 } from "./HeaderStyles";
 
-
 const Header = () => (
   <Container>
     {/**   Icon and Name **/}
@@ -35,30 +34,30 @@ const Header = () => (
     {/* Links */}
     <Div2>
       <li>
-        <Link href="#projects">
-          <NavLink>Proyects</NavLink>
+        <Link href="#proyectos">
+          <NavLink>Proyectos</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+        <Link href="#tecnologias">
+          <NavLink>Tecnologías</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
+        <Link href="#sobre">
+          <NavLink>Sobre mi</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
       {/* Language links */}
       <li>
-        <Link href="#">
+        <Link href="/">
           <NavLink>en</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="/index_es">
+        <Link href="#">
           <NavLink>es</NavLink>
         </Link>
       </li>
@@ -66,9 +65,9 @@ const Header = () => (
       <SocialIcons href="https://github.com/marasortiz">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://linkedin.com">
+      {/* <SocialIcons href="https://linkedin.com">
         <AiFillLinkedin size="3rem" />
-      </SocialIcons>
+      </SocialIcons> */}
     </Div3>
   </Container>
 );
