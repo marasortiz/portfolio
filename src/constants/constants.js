@@ -1,6 +1,16 @@
 // EN
 export const projects = [
   {
+    title: "Calculator",
+    description:
+      "A 'simple' calculator in React that handles input changes, user interaction, and complex calculations",
+    image: "./images/calc.png",
+    tags: ["React", "HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/calculator",
+    visit: "https://marasortiz.github.io/calculator/",
+    id: 0,
+  },
+  {
     title: "Hoobank",
     description:
       "Using Vite.js (React) shows a bank web with multiple components who shows different ways to reuse the components",
@@ -8,7 +18,7 @@ export const projects = [
     tags: ["ViteJs", "React", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/hoobank-vite",
     visit: "https://marasortiz.github.io/hoobank-vite/",
-    id: 0,
+    id: 1,
   },
   {
     title: "Restaurant Page",
@@ -18,7 +28,7 @@ export const projects = [
     tags: ["React", "TailwindCSS", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/gericht-restaurant",
     visit: "https://marasortiz.github.io/gericht-restaurant/",
-    id: 1,
+    id: 2,
   },
   {
     title: "Modern UI/UX GPT-3",
@@ -28,7 +38,7 @@ export const projects = [
     tags: ["React", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/gpt3_mso",
     visit: "https://marasortiz.github.io/gpt3_mso/",
-    id: 2,
+    id: 3,
   },
   {
     title: "RPG - Dragon Repeller",
@@ -38,7 +48,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/JavaScript-RPG",
     visit: "https://javascript-rpg.marasortiz.repl.co/",
-    id: 3,
+    id: 4,
   },
   {
     title: "Movie Review",
@@ -48,7 +58,7 @@ export const projects = [
     tags: ["HTML", "JavaScript", "CSS", "APIs", "MongoDB"],
     source: "https://github.com/marasortiz/frontend_movie_v2",
     visit: "https://frontendmoviev2.marasortiz.repl.co",
-    id: 3,
+    id: 5,
   },
   {
     title: "Gym Form (ES)",
@@ -58,7 +68,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/Proyecto_final-Gimnasio",
     visit: "https://marasortiz.github.io/Proyecto_final-Gimnasio/",
-    id: 3,
+    id: 6,
   },
   {
     title: "Video API (ES)",
@@ -68,12 +78,22 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/Practica_4-APIs_de_HTML5",
     visit: "https://marasortiz.github.io/Practica_4-APIs_de_HTML5/",
-    id: 3,
+    id: 7,
   },
 ];
 
 // ES
 export const proyectos = [
+  {
+    title: "Calculadora",
+    description:
+      "Una calculadora 'simple' en React que maneja cambios de entrada, interacción del usuario y cálculos complejos.",
+    image: "./images/calc.png",
+    tags: ["React", "HTML", "CSS", "JavaScript"],
+    source: "https://github.com/marasortiz/calculator",
+    visit: "https://marasortiz.github.io/calculator/",
+    id: 0,
+  },
   {
     title: "Hoobank (EN)",
     description:
@@ -82,7 +102,7 @@ export const proyectos = [
     tags: ["ViteJs", "React", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/hoobank-vite",
     visit: "https://marasortiz.github.io/hoobank-vite/",
-    id: 0,
+    id: 1,
   },
   {
     title: "Restaurante (EN)",
@@ -92,7 +112,7 @@ export const proyectos = [
     tags: ["React", "TailwindCSS", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/gericht-restaurant",
     visit: "https://marasortiz.github.io/gericht-restaurant/",
-    id: 1,
+    id: 2,
   },
   {
     title: "UI/UX GPT-3 Web (EN)",
@@ -102,7 +122,7 @@ export const proyectos = [
     tags: ["React", "HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/gpt3_mso",
     visit: "https://marasortiz.github.io/gpt3_mso/",
-    id: 2,
+    id: 3,
   },
   {
     title: "RPG - Dragon Repeller (EN)",
@@ -112,7 +132,7 @@ export const proyectos = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/JavaScript-RPG",
     visit: "https://javascript-rpg.marasortiz.repl.co/",
-    id: 3,
+    id: 4,
   },
   {
     title: "API de Peliculas (EN)",
@@ -122,7 +142,7 @@ export const proyectos = [
     tags: ["HTML", "JavaScript", "CSS", "APIs", "MongoDB"],
     source: "https://github.com/marasortiz/frontend_movie_v2",
     visit: "https://frontendmoviev2.marasortiz.repl.co",
-    id: 3,
+    id: 5,
   },
   {
     title: "Gimnasio (ES)",
@@ -132,7 +152,7 @@ export const proyectos = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/Proyecto_final-Gimnasio",
     visit: "https://marasortiz.github.io/Proyecto_final-Gimnasio/",
-    id: 3,
+    id: 6,
   },
   {
     title: "Video API (ES)",
@@ -142,7 +162,7 @@ export const proyectos = [
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/Practica_4-APIs_de_HTML5",
     visit: "https://marasortiz.github.io/Practica_4-APIs_de_HTML5/",
-    id: 3,
+    id: 7,
   },
 ];
 
