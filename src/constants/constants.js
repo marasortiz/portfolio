@@ -37,7 +37,7 @@ export const projects = [
     image: "./images/4.png",
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/JavaScript-RPG",
-    visit: "https://javascript-rpg.marasortiz.repl.co/",
+    visit: "https://codepen.io/marasortiz/pen/qEbwGKV",
     id: 3,
   },
   {
@@ -121,7 +121,7 @@ export const proyectos = [
     image: "./images/4.png",
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/marasortiz/JavaScript-RPG",
-    visit: "https://javascript-rpg.marasortiz.repl.co/",
+    visit: "https://codepen.io/marasortiz/pen/qEbwGKV",
     id: 3,
   },
   {
