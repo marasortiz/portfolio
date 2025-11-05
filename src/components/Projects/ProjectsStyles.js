@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
-export const Img = styled.img`
+// export const Img = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   overflow: hidden;
+//   @media ${(props) => props.theme.breakpoints.sm} {
+//     display: flex;
+//   }
+// `;
+
+const StyledImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -9,6 +19,12 @@ export const Img = styled.img`
     display: flex;
   }
 `;
+
+// Nuevo componente Img que corrige la ruta automáticamente
+export const Img = ({ src, ...props }) => {
+  const correctedSrc = `/portfolio${src}`; // Anteponer /portfolio para GitHub Pages
+  return <StyledImg src={correctedSrc} {...props} />;
+};
 
 export const GridContainer = styled.section`
   display: grid;
