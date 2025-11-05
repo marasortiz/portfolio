@@ -1,22 +1,70 @@
-/* eslint-disable import/no-extraneous-dependencies */
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+name: Deploy Next.js site to Pages
 
-module.exports = withBundleAnalyzer({
-  poweredByHeader: false,
-  trailingSlash: true,
-  reactStrictMode: true,
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
 
-  // ✅ CORREGIDO
-  basePath: "/portfolio",
-  assetPrefix: "/portfolio/",
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-  // ✅ NECESARIO PARA GITHUB PAGES
-  output: "export",
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-  // ✅ NECESARIO PARA IMÁGENES EN PAGES
-  images: {
-    unoptimized: true,
-  },
-});
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+
+      - name: Build Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      - name: Export static HTML
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
