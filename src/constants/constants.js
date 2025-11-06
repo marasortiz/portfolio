@@ -47,7 +47,7 @@ export const projects = [
     image: "./images/5.png",
     tags: ["HTML", "JavaScript", "CSS", "APIs", "MongoDB"],
     source: "https://github.com/marasortiz/frontend_movie_v2",
-    visit: "https://frontendmoviev2.marasortiz.repl.co",
+    visit: "https://moviereview-phi.vercel.app",
     id: 4,
   },
   {
@@ -131,7 +131,7 @@ export const proyectos = [
     image: "./images/5.png",
     tags: ["HTML", "JavaScript", "CSS", "APIs", "MongoDB"],
     source: "https://github.com/marasortiz/frontend_movie_v2",
-    visit: "https://frontendmoviev2.marasortiz.repl.co",
+    visit: "https://moviereview-phi.vercel.app",
     id: 4,
   },
   {

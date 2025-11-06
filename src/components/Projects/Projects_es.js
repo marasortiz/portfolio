@@ -45,8 +45,20 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={visit}>Visita</ExternalLinks>
-              <ExternalLinks href={source}>Fuente</ExternalLinks>
+              <ExternalLinks
+                href={visit}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visita
+              </ExternalLinks>
+              <ExternalLinks
+                href={source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fuente
+              </ExternalLinks>
             </UtilityList>
           </BlogCard>
         )
